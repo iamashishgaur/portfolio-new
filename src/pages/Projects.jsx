@@ -135,6 +135,20 @@ const Projects = () => {
               whileTap={{ scale: 0.9 }}
             >
               <FeatursProjects
+                title="Our Portfolio"
+                img="images/projects/portfolio.png"
+                summary="Our Modern E-Commerce Platform is a web application built using React.js, JavaScript, styled-components, MongoDB, Express.js, HTML, CSS, and Bootstrap 5. It aims to provide users with a seamless online shopping experience, combining a visually appealing user interface."
+                to="https://ashish-new.netlify.app/"
+                github="https://github.com/iamashishgaur/portfolio-new"
+                type="Featurs Project"
+              />
+            </motion.div>
+            <motion.div
+              className="col-span-12"
+              whileHover={{ y: -5 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              <FeatursProjects
                 title="Pristore Mern E-Commerce"
                 img="images/projects/pristore.png"
                 summary="Our Modern E-Commerce Platform is a web application built using React.js, JavaScript, styled-components, MongoDB, Express.js, HTML, CSS, and Bootstrap 5. It aims to provide users with a seamless online shopping experience, combining a visually appealing user interface."
