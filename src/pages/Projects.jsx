@@ -138,7 +138,7 @@ const Projects = () => {
                 title="Our Portfolio"
                 img="images/projects/portfolio.png"
                 summary="Our Portfolio is a web application built using React.js, JavaScript, styled-components,  HTML, CSS, and Tailwind CSS. "
-                to="https://ashish-new.netlify.app/"
+                to="https://ashishgaur.co.in/"
                 github="https://github.com/iamashishgaur/portfolio-new"
                 type="Featurs Project"
               />
