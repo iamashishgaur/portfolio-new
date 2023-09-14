@@ -28,15 +28,15 @@ const CustomLink = ({ to, title, className = " " }) => {
     </Link>
   );
 };
-const CustomMobileLink = ({ href, title, className = " ", toggle }) => {
+const CustomMobileLink = ({ to, title, className = " ", toggle }) => {
   const location = useLocation();
   const handleClick = () => {
     toggle();
-    location.pathname(href);
+    location.pathname(to);
   };
   return (
     <Link
-      to={href}
+      to={to}
       className={`${className} relative group text-light dark:text-dark mt-2`}
       onClick={handleClick}
     >
@@ -44,7 +44,7 @@ const CustomMobileLink = ({ href, title, className = " ", toggle }) => {
       <span
         className={`h-[1px] inline-block bg-light absolute left-0 -bottom-0.5
       group-hover:w-full transition-[width] ease duration-300
-      ${location.pathname === href ? "w-full" : "w-0"} dark:bg-dark`}
+      ${location.pathname === to ? "w-full" : "w-0"} dark:bg-dark`}
       >
         &nbsp;
       </span>
@@ -144,19 +144,19 @@ const Navbar = () => {
           >
             <nav className="flex items-center text-start flex-col justify-center gap-2">
               <CustomMobileLink
-                href="/"
+                to="/"
                 title="Home"
                 className=""
                 toggle={handleClick}
               />
               <CustomMobileLink
-                href="/about"
+                to="/about"
                 title="About"
                 className=""
                 toggle={handleClick}
               />
               <CustomMobileLink
-                href="/project"
+                to="/project"
                 title="Projects"
                 className=""
                 toggle={handleClick}
