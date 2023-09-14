@@ -22,7 +22,7 @@ const Logo = () => {
           transition: { duration: 1, repeat: Infinity },
         }}
       >
-        AS
+        <img src="images/logo.png" alt="Ashish" width={35} />
       </MotionLink>
     </div>
   );
