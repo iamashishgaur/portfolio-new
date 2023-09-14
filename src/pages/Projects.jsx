@@ -55,7 +55,7 @@ const FeatursProjects = ({ type, title, summary, img, to, github }) => {
             target="_blank"
             className="ml-4 rounded-lg bg-dark text-light p-2 px-6  text-lg font-semibold dark:bg-light dark:text-dark
             hover:dark:bg-dark hover:dark:text-light
-            hover:dark:border-light  border-2 border-solid border-transparent hover:border-dark sm:px-4 sm-text-base"
+            hover:dark:border-light  border-2 border-solid border-transparent hover:border-dark sm:px-2 sm-text-base"
           >
             Visit Project
           </Link>
@@ -154,6 +154,20 @@ const Projects = () => {
                 summary="Our Modern E-Commerce Platform is a web application built using React.js, JavaScript, styled-components, MongoDB, Express.js, HTML, CSS, and Bootstrap 5. It aims to provide users with a seamless online shopping experience, combining a visually appealing user interface."
                 to="/"
                 github="https://github.com/iamashishgaur/pristore-frontend"
+                type="Featurs Project"
+              />
+            </motion.div>
+            <motion.div
+              className="col-span-12"
+              whileHover={{ y: -5 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              <FeatursProjects
+                title="SKYmovie.com"
+                img="images/projects/skymovie.png"
+                summary="This is the Movie web application , i am using IMDB api and fetch the latest movie ."
+                to="https://skymovies-new.netlify.app/"
+                github="https://github.com/iamashishgaur/skymovie"
                 type="Featurs Project"
               />
             </motion.div>

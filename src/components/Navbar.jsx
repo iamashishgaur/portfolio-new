@@ -35,8 +35,8 @@ const CustomMobileLink = ({ href, title, className = " ", toggle }) => {
     location.pathname(href);
   };
   return (
-    <button
-      href={href}
+    <Link
+      to={href}
       className={`${className} relative group text-light dark:text-dark mt-2`}
       onClick={handleClick}
     >
@@ -48,7 +48,7 @@ const CustomMobileLink = ({ href, title, className = " ", toggle }) => {
       >
         &nbsp;
       </span>
-    </button>
+    </Link>
   );
 };
 
@@ -62,7 +62,7 @@ const Navbar = () => {
 
   return (
     <>
-      <header className="w-full px-32  py-3 font-medium flex items-center justify-between dark:text-dark relative z-10 lg:px-16 md:px-12 sm:px-8">
+      <header className="w-full px-32  py-5 font-medium flex items-center justify-between dark:text-dark relative z-10 lg:px-16 md:px-12 sm:px-8">
         <button
           className=" flex-col justify-center items-center hidden lg:flex"
           onClick={handleClick}

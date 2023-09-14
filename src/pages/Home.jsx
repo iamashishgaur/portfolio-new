@@ -10,7 +10,7 @@ export default function Home() {
       <TransitionEffact />
       <main className="flex items-center text-dark w-full  dark:text-light">
         <Layout className="pt-0 md:pt-16 sm:pt-8 h-[calc(100vh_-_110px)]">
-          <div className="flex items-center gap-6 mt-20 md:mt-0 justify-between w-full lg:flex-col ">
+          <div className="flex items-center gap-6 mt-16 md:mt-0 justify-between w-full lg:flex-col ">
             <div
               className="IMGSIze col-span-3 w-50 ml:10 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:bg-dark dark:border-light 
             xl:col-span-2 md:col-span-8
