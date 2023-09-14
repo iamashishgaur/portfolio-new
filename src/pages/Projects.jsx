@@ -137,7 +137,7 @@ const Projects = () => {
               <FeatursProjects
                 title="Our Portfolio"
                 img="images/projects/portfolio.png"
-                summary="Our Modern E-Commerce Platform is a web application built using React.js, JavaScript, styled-components, MongoDB, Express.js, HTML, CSS, and Bootstrap 5. It aims to provide users with a seamless online shopping experience, combining a visually appealing user interface."
+                summary="Our Portfolio is a web application built using React.js, JavaScript, styled-components,  HTML, CSS, and Tailwind CSS. "
                 to="https://ashish-new.netlify.app/"
                 github="https://github.com/iamashishgaur/portfolio-new"
                 type="Featurs Project"
