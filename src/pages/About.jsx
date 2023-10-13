@@ -1,36 +1,12 @@
 import AnimatedText from "../components/AnimatedText";
 import Layout from "../components/Layout";
-import React, { useEffect, useRef } from "react";
-import { useInView, useMotionValue, useSpring } from "framer-motion";
 import Skills from "../components/Skills";
 import Education from "../components/Education";
 // import Experiecne from "../components/Experiecne";
 import TransitionEffact from "../components/TransitionEffact";
 import Meta from "../components/Meta";
 import { SkillData } from "../data/skilldata";
-
-const AnimatedNumbers = ({ value }) => {
-  const ref = useRef(null);
-  const motionValue = useMotionValue(0);
-  const springValue = useSpring(motionValue, { duration: 3000 });
-  const isInView = useInView(ref, { once: true });
-
-  useEffect(() => {
-    if (isInView) {
-      motionValue.set(value);
-    }
-  }, [isInView, value, motionValue]);
-
-  useEffect(() => {
-    springValue.on("change", (latest) => {
-      if (ref.current && latest.toFixed(0) <= value) {
-        ref.current.textContent = latest.toFixed(0);
-      }
-    });
-  }, [springValue, value]);
-
-  return <span ref={ref}></span>;
-};
+import { AnimatedNumbers } from "../components/AnimatedNumbers";
 
 const About = () => {
   return (
